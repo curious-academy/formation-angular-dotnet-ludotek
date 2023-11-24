@@ -1,12 +1,16 @@
 import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withPreloading } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 
+import { WithDataCustomPreloadStrategy } from 'tools-routes';
+
+
+
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes),
+    provideRouter(routes, withPreloading(WithDataCustomPreloadStrategy)),
     provideClientHydration()
   ]
 };
