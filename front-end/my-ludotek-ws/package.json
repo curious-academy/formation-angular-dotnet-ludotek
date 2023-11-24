@@ -3,8 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+
+    "prestart": "npm run build:libs",
     "start": "ng serve",
-    "build": "ng build",
+
+    "build:libs:books": "ng build book-features",
+    "build:libs": "npm run build:libs:books",
+    "build:app": "ng build front-end",
+
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:front-end": "node dist/front-end/server/server.mjs"
