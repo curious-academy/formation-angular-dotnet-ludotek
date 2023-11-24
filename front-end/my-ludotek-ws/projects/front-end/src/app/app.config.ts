@@ -10,7 +10,7 @@ import { WithDataCustomPreloadStrategy } from 'tools-routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes), // withPreloading(WithDataCustomPreloadStrategy) : TODO: miss ActivatedRoute
+    provideRouter(routes, withPreloading(WithDataCustomPreloadStrategy)), // : TODO: miss ActivatedRoute
     provideClientHydration()
   ]
 };
