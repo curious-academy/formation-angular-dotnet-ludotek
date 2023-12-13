@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GetAllBooksApplication } from '../../services/books.application';
+import { SearchStore } from 'search';
 
 @Component({
   selector: 'dtbc-list-books',
@@ -11,4 +12,5 @@ import { GetAllBooksApplication } from '../../services/books.application';
 })
 export class ListBooksComponent {
   books$ = inject(GetAllBooksApplication).getAll();
+  store = inject(SearchStore).store;
 }

@@ -6,6 +6,9 @@
       "book-features": [
         "./dist/book-features"
       ],
+      "search": [
+        "./dist/search"
+      ],
       "tools-routes": [
         "./dist/tools-routes"
       ]
