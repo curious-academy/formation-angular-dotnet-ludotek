@@ -12,5 +12,5 @@ import { SearchStore } from 'search';
 })
 export class ListBooksComponent {
   books$ = inject(GetAllBooksApplication).getAll();
-  store = inject(SearchStore).store;
+  searchStore = inject(SearchStore).store;
 }
