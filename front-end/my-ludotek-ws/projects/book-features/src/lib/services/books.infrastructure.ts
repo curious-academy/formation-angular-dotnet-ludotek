@@ -14,7 +14,7 @@ export interface GetAllBooks {
 export const inMemoryGetAllBooks: GetAllBooks = {
   getAll: (filter: BookFilter) => {
     const filterTable = bookTable.filter(item => item.title.toLowerCase().startsWith(filter.value.toLowerCase()))
-    return of(bookTable).pipe(delay(1500));
+    return of(filterTable).pipe(delay(1500));
   }
 }
 
