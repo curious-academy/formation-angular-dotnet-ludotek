@@ -3,22 +3,18 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-
     "prestart": "npm run build:libs",
     "start": "ng serve",
-
     "build:libs:tools-routes": "ng build tools-routes",
     "build:libs:tools": "npm run build:libs:tools-routes",
     "build:libs:search": "ng build search",
     "build:libs:books": "ng build book-features",
     "build:libs": "npm run build:libs:tools-routes && npm run build:libs:search && npm run build:libs:books",
     "build:app": "ng build front-end",
-
     "watch:libs:tools-routes": "ng build tools-routes --watch --configuration development",
     "watch:libs:search": "ng build search --watch --configuration development",
     "watch:libs:books": "ng build book-features --watch --configuration development",
     "watch:app": "ng build front-end --watch --configuration development",
-
     "test": "ng test",
     "serve:ssr:front-end": "node dist/front-end/server/server.mjs"
   },
@@ -34,6 +30,7 @@
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.0.3",
+    "@ngrx/signals": "^17.0.1",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
