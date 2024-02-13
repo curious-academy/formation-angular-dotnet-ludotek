@@ -1,7 +1,11 @@
 Recherche en cours {{ searchStore().item }}
 
+Loading ? {{isLoading$$()}}
 
-@for (book of books$ | async; track book.id) {
+<button [disabled]="isLoading$$()" (click)="load()">Load</button>
+
+
+@for (book of books$$(); track book.id) {
   <div>
     {{book.title}}
   </div>
