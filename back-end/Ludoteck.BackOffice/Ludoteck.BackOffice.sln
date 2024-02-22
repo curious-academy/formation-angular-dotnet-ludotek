@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ludoteck.BackOffice.Web.API", "Ludoteck.BackOffice.Web.API\Ludoteck.BackOffice.Web.API.csproj", "{9032B21B-29A9-4E86-8D01-62A1EBC80553}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{9FD06AD7-C58A-4225-91DF-8CB3A9B2DD5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Books", "Books", "{F906DA77-ADFC-441C-A01C-E6E7AEE93613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ludoteck.BackOffice.Core.Books.Models", "Ludoteck.BackOffice.Core.Books.Models\Ludoteck.BackOffice.Core.Books.Models.csproj", "{DCAC930A-13A0-4F74-9417-C8E7E90B4F4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9032B21B-29A9-4E86-8D01-62A1EBC80553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9032B21B-29A9-4E86-8D01-62A1EBC80553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9032B21B-29A9-4E86-8D01-62A1EBC80553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9032B21B-29A9-4E86-8D01-62A1EBC80553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCAC930A-13A0-4F74-9417-C8E7E90B4F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAC930A-13A0-4F74-9417-C8E7E90B4F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAC930A-13A0-4F74-9417-C8E7E90B4F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAC930A-13A0-4F74-9417-C8E7E90B4F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F906DA77-ADFC-441C-A01C-E6E7AEE93613} = {9FD06AD7-C58A-4225-91DF-8CB3A9B2DD5B}
+		{DCAC930A-13A0-4F74-9417-C8E7E90B4F4F} = {F906DA77-ADFC-441C-A01C-E6E7AEE93613}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D8E78ED-211B-4190-BAAC-B4DA902A7E18}
+	EndGlobalSection
+EndGlobal

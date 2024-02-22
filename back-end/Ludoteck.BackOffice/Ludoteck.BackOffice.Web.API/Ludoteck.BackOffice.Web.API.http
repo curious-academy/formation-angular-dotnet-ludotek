@@ -1,0 +1,10 @@
+@Ludoteck.BackOffice.Web.API_HostAddress = https://localhost:49153
+
+GET {{Ludoteck.BackOffice.Web.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{Ludoteck.BackOffice.Web.API_HostAddress}}/api/Book/
+
+###

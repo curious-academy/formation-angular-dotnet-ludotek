@@ -1,7 +1,8 @@
-import { Injectable } from "@angular/core";
+import { Injectable, inject } from "@angular/core";
 import { Observable, delay, of } from "rxjs";
 import { Book, Books } from "../models";
 import { bookTable } from "./fakes";
+import { HttpClient } from "@angular/common/http";
 
 export interface BookFilter {
   value: string;
@@ -22,12 +23,14 @@ export const mockingFactory = () => inMemoryGetAllBooks;
 
 @Injectable({
   providedIn: 'root',
-  useFactory: mockingFactory
+  // useFactory: mockingFactory
 })
 export class GetAllBooksInfrastructure implements GetAllBooks {
+  private readonly http = inject(HttpClient);
 
   getAll(filter: BookFilter): Observable<Books> {
-    throw new Error("Method not implemented.");
+    // TODO: don't do that in PROD !
+    return this.http.get<Books>('https://localhost:49153/api/book');
   }
 
 }
